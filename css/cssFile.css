@@ -1,0 +1,114 @@
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+.button {
+  background-color: #A8A8F8;
+  border: white;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline-color:white;
+  cursor: pointer;
+}
+
+
+/* Create two equal columns that floats next to each other */
+#logo{
+	margin-top: -5px;
+	margin-left: 6px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 #a8a8f8, 0 6px 20px 0 #a8a8f8;
+}
+.column {
+  margin-top: 0px;
+  float: left;
+  width: 50%;
+  height: 98vh;
+  overflow: hidden;
+  background-color:#f9f9f1;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background-color:#f1f1f1;
+}
+/* Create two rows in right column */
+.colRrow {
+  width: 50vw;
+  height: 14vh;
+  overflow: auto;
+}
+
+.colRrowb {
+  width: 49vw;
+  text-align:justify;
+  overflow: auto;
+  height: 83vh;
+}
+
+/*--------------------------------------Form------------------------------------------------------*/
+
+.HCKMERegForm {
+	border: 10px solid #a8a8f8;
+	width:45%;
+	margin: 9% auto;
+	background-color: a8a8f8;
+	box-shadow: 1px 1px 5px 6px #a8a8f8;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.regtxt {
+	width: 100%;
+	border-radius: 15px;
+	padding: 4px 10px;
+	margin: 1px 0;
+	display: inline-block;
+	border: 5px solid #a8a8f8;
+	box-sizing: border-box;
+}
+
+.required:before
+{
+    color: white;
+    content: " *";
+}
+.required:after
+{
+    color: white;
+    content: "  (Required)";
+	font-size: 12px;
+}
+
+.regtxt:focus {
+	outline-color: #a8a8f8;
+	outline-style: auto;
+}
+
+.ltxt {
+	color: white;
+}
+
+
+.regSubmit {
+	background-color: white;
+	color: black;
+	border: 10px solid #afafff;
+	cursor: pointer;
+	width: 100px;
+	margin: 1px 0;
+	font-weight: bold;
+	font-size: 16px;
+	outline-color: white;
+}
+
+.chb {
+	outline-color: white;
+}
+
+.regSubmit:hover,.button:hover {
+	opacity: 0.4;
+}
