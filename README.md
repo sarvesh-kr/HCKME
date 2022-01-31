@@ -1,2 +1,1 @@
-# HCKME
-HCKME General purpose website
+# hckmeV2
