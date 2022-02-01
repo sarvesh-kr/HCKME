@@ -127,6 +127,7 @@ let Post = () => {
     post1.className = 'postClass';
     // post1.innerHTML = `content-2`;
     document.querySelector('#inBody').appendChild(post1);
+    document.querySelector('#postId1').style.backgroundImage = "url('../img/hckmeNews.png')";
 
     var post2 = document.createElement('div');
     post2.id = 'postId2';
