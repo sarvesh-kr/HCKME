@@ -1,3 +1,8 @@
+var script = document.createElement('script');
+script.src = "./js/content.js";
+document.head.appendChild(script)
+
+
 window.onload = () => {
     Index();
 }
@@ -47,12 +52,32 @@ let PostHeader = () => {
 }
 
 let Post = () => {
-
+    //--Start
     var post = document.createElement('div');
     post.id = 'postId';
     post.className = 'postClass';
-    post.innerHTML = `Content-1`;
+    var postInternal = document.createElement("div");
+        postInternal.id = 'postInternalId';
+        postInternal.innerHTML = `
+    
+    <div id="content-1" class="content">
+        <h2>"Hello World" Program in Java, C, C++, Python</h2>
+        <p class="p1">
+            <b>HelloWorld.java</b>
+            <pre>
+            class HelloWorld {
+                public static void main(String[] args) { 
+                    System.out.println("Hello, World"); <br>
+                }
+            }
+            </pre>
+        </p>
+    </div>
+    
+    `;
     document.querySelector('#inBody').appendChild(post);
+    document.querySelector("#postId").appendChild(postInternal);
+    //--end
 
     var post1 = document.createElement('div');
     post1.id = 'postId1';

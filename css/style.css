@@ -106,3 +106,26 @@ body {
     font-size: 175%;
 
 }
+
+.content {
+     text-decoration-color: rgb(117, 157, 209);
+     overflow: auto;
+}
+
+.p1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: rgb(46, 42, 42);
+}
+
+#postInternalId {
+    height: 40vh;
+    width: 55vw;
+    margin-top: 5%;
+    margin-left:15%;
+    background-color: red;
+    border-radius: 10px;
+    pointer-events:painted;
+}
