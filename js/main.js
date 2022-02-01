@@ -37,7 +37,7 @@ let PostHeader = () => {
 
     var postHeaderTextDiv = document.createElement('div');
     postHeaderTextDiv.id = 'postHeaderTextDivId';
-    postHeaderTextDiv.innerHTML = 'HCKME\'s&nbsp;<sup>Blog</sup>';
+    postHeaderTextDiv.innerHTML = 'HCKME\'s&nbsp;<sup>Blog&nbsp;<img src="../img/supFace.png" height="100%" width="7%" alt="Hello"></sup>';
 
     closeButton = document.createElement('button');
     closeButton.id = 'closeButtonId';
