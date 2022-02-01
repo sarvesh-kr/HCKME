@@ -58,6 +58,7 @@ let Post = () => {
     post.className = 'postClass';
     var postInternal = document.createElement("div");
     postInternal.id = 'postInternalId';
+    postInternal.className = 'postInternalClass';
     postInternal.innerHTML = `
     
     <div id="content-1" class="content">
@@ -117,6 +118,7 @@ let Post = () => {
     
     `;
     document.querySelector('#inBody').appendChild(post);
+    document.querySelector('#postId').style.backgroundImage = "url('../img/programmer.png')";
     document.querySelector("#postId").appendChild(postInternal);
     //--end
 
@@ -180,9 +182,21 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
-            box.classList.add('postOpen');
-            PostHeader();
-            document.body.appendChild(box);
+            // if (box.target != 'postInternalClass') {
+                box.style.background = 'none';
+                box.style.backgroundColor = 'rgb(102, 150, 210)';
+                document.querySelector('#postInternalId').style.opacity = '100%';
+                box.classList.add('postOpen');
+                PostHeader();
+                document.body.appendChild(box);
+            // }
         })
     }
+}
+
+let FunZone = () => {
+    var funZone = document.createElement('div');
+    funZone.id = 'funZoneId';
+    funZone.class = 'funZoneClass';
+    document.querySelector('#inBody').appendChild(funZone);
 }

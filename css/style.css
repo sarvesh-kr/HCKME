@@ -40,6 +40,7 @@ body {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: auto;
+    position: relative;
 }
 
 #footerId {
@@ -54,10 +55,11 @@ body {
     margin: 1%;
     height: 17%;
     width: 18%;
-    background-color: rgb(106, 152, 212);
+    background-color: rgba(189, 201, 224, 0.486);
     float: left;
     border-radius: 10px;
     border-width: 0;
+    background-size: 100% 100%;
     overflow: hidden;
 }
 
@@ -85,6 +87,10 @@ body {
     float: right;
     margin: 5px;
     cursor: pointer;
+}
+
+#closeButtonId:hover {
+    opacity: 75%;
 }
 
 #postHeaderId {
@@ -130,6 +136,7 @@ body {
     pointer-events:painted;
     overflow: auto;
     scroll-behavior:smooth;
+    opacity: 0%;
 }
 
 #postInternalId:hover {
@@ -145,4 +152,9 @@ h2 {
 pre {
     font-size: 1rem;
     font-weight: bold;
+}
+
+#funZoneId {
+    height: 200px;
+    width: 200px;
 }
