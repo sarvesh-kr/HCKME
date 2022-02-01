@@ -125,115 +125,115 @@ let Post = () => {
     var post1 = document.createElement('div');
     post1.id = 'postId1';
     post1.className = 'postClass';
-    post1.innerHTML = `content-2`;
+    // post1.innerHTML = `content-2`;
     document.querySelector('#inBody').appendChild(post1);
 
     var post2 = document.createElement('div');
     post2.id = 'postId2';
     post2.className = 'postClass';
-    post2.innerHTML = `content-3`;
+    // post2.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post2);
 
     var post3 = document.createElement('div');
     post3.id = 'postId3';
     post3.className = 'postClass';
-    post3.innerHTML = `content-3`;
+    // post3.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post3);
 
     var post4 = document.createElement('div');
     post4.id = 'postId4';
     post4.className = 'postClass';
-    post4.innerHTML = `content-3`;
+    // post4.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post4);
 
     var post5 = document.createElement('div');
     post5.id = 'postId5';
     post5.className = 'postClass';
-    post5.innerHTML = `content-3`;
+    // post5.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post5);
 
     var post6 = document.createElement('div');
     post6.id = 'postId6';
     post6.className = 'postClass';
-    post6.innerHTML = `content-3`;
+    // post6.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post6);
 
     var post7 = document.createElement('div');
     post7.id = 'postId7';
     post7.className = 'postClass';
-    post7.innerHTML = `content-3`;
+    // post7.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post7);
 
     var post8 = document.createElement('div');
     post8.id = 'postId8';
     post8.className = 'postClass';
-    post8.innerHTML = `content-3`;
+    // post8.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post8);
 
     var post9 = document.createElement('div');
     post9.id = 'postId9';
     post9.className = 'postClass';
-    post9.innerHTML = `content-3`;
+    // post9.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post9);
 
     var post10 = document.createElement('div');
     post10.id = 'postId10';
     post10.className = 'postClass';
-    post10.innerHTML = `content-3`;
+    // post10.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post10);
 
     var post11 = document.createElement('div');
     post11.id = 'postId11';
     post11.className = 'postClass';
-    post11.innerHTML = `content-3`;
+    // post11.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post11);
 
     var post12 = document.createElement('div');
     post12.id = 'postId12';
     post12.className = 'postClass';
-    post12.innerHTML = `content-3`;
+    // post12.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post12);
 
     var post13 = document.createElement('div');
     post13.id = 'postId13';
     post13.className = 'postClass';
-    post13.innerHTML = `content-3`;
+    // post13.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post13);
 
     var post14 = document.createElement('div');
     post14.id = 'postId14';
     post14.className = 'postClass';
-    post14.innerHTML = `content-3`;
+    // post14.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post14);
 
     var post15 = document.createElement('div');
     post15.id = 'postId15';
     post15.className = 'postClass';
-    post15.innerHTML = `content-3`;
+    // post15.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post15);
 
     var post16 = document.createElement('div');
     post16.id = 'postId16';
     post16.className = 'postClass';
-    post16.innerHTML = `content-3`;
+    // post16.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post16);
 
     var post17 = document.createElement('div');
     post17.id = 'postId17';
     post17.className = 'postClass';
-    post17.innerHTML = `content-3`;
+    // post17.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post17);
 
     var post18 = document.createElement('div');
     post18.id = 'postId18';
     post18.className = 'postClass';
-    post18.innerHTML = `content-3`;
+    // post18.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post18);
 
     var post19 = document.createElement('div');
     post19.id = 'postId19';
     post19.className = 'postClass';
-    post19.innerHTML = `content-3`;
+    // post19.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post19);
 }
 
