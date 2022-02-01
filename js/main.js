@@ -57,20 +57,61 @@ let Post = () => {
     post.id = 'postId';
     post.className = 'postClass';
     var postInternal = document.createElement("div");
-        postInternal.id = 'postInternalId';
-        postInternal.innerHTML = `
+    postInternal.id = 'postInternalId';
+    postInternal.innerHTML = `
     
     <div id="content-1" class="content">
         <h2>"Hello World" Program in Java, C, C++, Python</h2>
         <p class="p1">
             <b>HelloWorld.java</b>
-            <pre>
+            <pre><code>
             class HelloWorld {
                 public static void main(String[] args) { 
                     System.out.println("Hello, World"); <br>
                 }
             }
-            </pre>
+            </code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.c</b>
+            <pre><code>
+            #include <stdio.h>
+
+            int main() {
+                printf("Hello, World");
+                return 0;
+            }
+            </code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.cpp</b>
+            <pre><code>
+            #include <iostream>
+            using namespace std;
+
+            //Creating Class with method HelloWorld()
+            class demo
+            {
+                public:
+                void HelloWorld() {
+                    cout << "Hello, World";
+                }
+            };
+            //Driver code
+            int main() {
+                //Creating class object
+                demo demo;
+
+                //Calling HelloWorld() method from demo class
+                demo.HelloWorld();
+            }
+            </code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.py</b>
+            <pre><code>
+            print("Hello World");
+            </code></pre>
         </p>
     </div>
     

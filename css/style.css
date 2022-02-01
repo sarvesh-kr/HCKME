@@ -52,8 +52,8 @@ body {
 
 .postClass {
     margin: 1%;
-    height: 17vh;
-    width: 18vw;
+    height: 17%;
+    width: 18%;
     background-color: rgb(106, 152, 212);
     float: left;
     border-radius: 10px;
@@ -121,11 +121,28 @@ body {
 }
 
 #postInternalId {
-    height: 40vh;
-    width: 55vw;
+    height: 45%;
+    width: 40%;
     margin-top: 5%;
-    margin-left:15%;
+    margin-left:5%;
     background-color: red;
     border-radius: 10px;
     pointer-events:painted;
+    overflow: auto;
+    scroll-behavior:smooth;
+}
+
+#postInternalId:hover {
+    height: 50%;
+    width: 60%;
+    transition: width 2s, height 2s;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+pre {
+    font-size: 1rem;
+    font-weight: bold;
 }
