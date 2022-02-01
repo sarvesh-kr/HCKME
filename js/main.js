@@ -22,9 +22,6 @@ let Container = () => {
         <div id="inBody" class="inBodyClass">
             
         </div>
-        <div id="inBodyRight class="inBodyRightClass">
-            
-        </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
         </div>
