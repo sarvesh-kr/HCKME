@@ -18,7 +18,7 @@ body {
     width: 100vw;
     background-color: rgb(106, 152, 212);
     overflow: hidden;
-    float: left;
+    float: inline-end;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -41,12 +41,6 @@ body {
     border-top-right-radius: 25px;
     overflow: auto;
     position: relative;
-}
-
-#inBodyRight {
-    
-    background-color: yellow !important;
-    writing-mode:sideways-rl;
 }
 
 #footerId {

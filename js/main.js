@@ -1,10 +1,7 @@
-var script = document.createElement('script');
-script.src = "./js/content.js";
-document.head.appendChild(script)
-
 
 window.onload = () => {
     Index();
+    contentJsCaller();
 }
 
 let Index = () => {
@@ -22,8 +19,8 @@ let Container = () => {
         <div id="inBody" class="inBodyClass">
             
         </div>
-        <div id="inBodyRight class="inBodyRightClass">
-            <p id="ad" style="writing-mode: vertical-rl; ">Ad Panel</p>
+        <div id="inBodyRight class="inBodyRightClass" style = 'background-image: url("../img/adGif.gif"); background-repeat: no-repeat; float:right; height: 85vh; width: 20vw; border-radius: 20px; color: white; float:right'>
+            <p id="ad" >Ad Panel placeholder</p>
         </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
@@ -246,21 +243,29 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
-            // if (box.target != 'postInternalClass') {
             box.style.background = 'none';
             box.style.backgroundColor = 'rgb(102, 150, 210)';
             document.querySelector('#postInternalId').style.opacity = '100%';
             box.classList.add('postOpen');
             PostHeader();
             document.body.appendChild(box);
-            // }
         })
     }
+    for (const box of boxes) {
+        box.removeEventListener('click', event);
+    }
 }
+
 
 let FunZone = () => {
     var funZone = document.createElement('div');
     funZone.id = 'funZoneId';
     funZone.class = 'funZoneClass';
     document.querySelector('#inBody').appendChild(funZone);
+}
+
+let contentJsCaller = () => {
+    var script = document.createElement('script');
+    script.src = "./js/content.js";
+    document.head.appendChild(script);
 }
