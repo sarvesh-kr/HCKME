@@ -33,14 +33,20 @@ body {
 
 #inBody {
     height: 85vh;
-    width: 100vw;
+    width: 80vw;
     background-color: rgb(221, 218, 218);
-    float: right;
+    float: left;
     color: whitesmoke;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: auto;
     position: relative;
+}
+
+#inBodyRight {
+    height: 85vh;
+    width: 20vw;
+    background-color: yellow !important;
 }
 
 #footerId {
