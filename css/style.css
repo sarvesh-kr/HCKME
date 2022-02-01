@@ -44,9 +44,9 @@ body {
 }
 
 #inBodyRight {
-    height: 85vh;
-    width: 20vw;
+    
     background-color: yellow !important;
+    writing-mode:sideways-rl;
 }
 
 #footerId {
@@ -67,6 +67,16 @@ body {
     border-width: 0;
     background-size: 100% 100%;
     overflow: hidden;
+}
+
+#ad {
+    padding: 5%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#inBodyRight:hover {
+    background-color: red;
 }
 
 .postClass:hover {

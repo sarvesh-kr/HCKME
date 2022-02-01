@@ -22,6 +22,9 @@ let Container = () => {
         <div id="inBody" class="inBodyClass">
             
         </div>
+        <div id="inBodyRight class="inBodyRightClass">
+            <p id="ad" style="writing-mode: vertical-rl; ">Ad Panel</p>
+        </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
         </div>
@@ -244,12 +247,12 @@ let postOpen = () => {
     for (const box of boxes) {
         box.addEventListener('click', event => {
             // if (box.target != 'postInternalClass') {
-                box.style.background = 'none';
-                box.style.backgroundColor = 'rgb(102, 150, 210)';
-                document.querySelector('#postInternalId').style.opacity = '100%';
-                box.classList.add('postOpen');
-                PostHeader();
-                document.body.appendChild(box);
+            box.style.background = 'none';
+            box.style.backgroundColor = 'rgb(102, 150, 210)';
+            document.querySelector('#postInternalId').style.opacity = '100%';
+            box.classList.add('postOpen');
+            PostHeader();
+            document.body.appendChild(box);
             // }
         })
     }
