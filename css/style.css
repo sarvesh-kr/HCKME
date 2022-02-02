@@ -34,9 +34,9 @@ body {
 
 #inBody {
     height: 85vh;
-    width: 80vw;
+    width: 70vw;
     background-color: rgb(221, 218, 218);
-    float: right;
+    float: left;
     color: whitesmoke;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -44,9 +44,22 @@ body {
     position: relative;
 }
 
-#inBodyAfter {
-    height: 100%;
-    width: 100%;
+#inBodyRight {
+    height: 85vh;
+    width: 15vw;
+    background-color: yellow !important;
+    float: right;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#inBodyLeft {
+    height: 85vh;
+    width: 15vw;
+    background-color: yellow !important;
+    float: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 #footerId {

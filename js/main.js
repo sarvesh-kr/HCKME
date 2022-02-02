@@ -16,22 +16,25 @@ let Container = () => {
         <div id="headId">
             <div id="logoText">HCKME</div>
         </div>
+        <div id="inBodyLeft" class="inBodyLeftClass" '>
+            
+        </div>
         <div id="inBody" class="inBodyClass">
             
         </div>
         <div id="inBodyRight" class="inBodyRightClass" '>
             <p id="ad" ><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8895032743556528"
             crossorigin="anonymous"></script>
-       <!-- Test ad Unit -->
-       <ins class="adsbygoogle"
+            <!-- Test ad Unit -->
+            <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-8895032743556528"
             data-ad-slot="9746343569"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
-       <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-       </script></p>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script></p>
         </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
