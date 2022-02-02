@@ -19,7 +19,7 @@ let Container = () => {
         <div id="inBody" class="inBodyClass">
             
         </div>
-        <div id="inBodyRight class="inBodyRightClass" style = 'background-image: url("../img/adGif.gif");'>
+        <div id="inBodyRight" class="inBodyRightClass" '>
             <p id="ad" ><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8895032743556528"
             crossorigin="anonymous"></script>
        <!-- Test ad Unit -->
