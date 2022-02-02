@@ -257,19 +257,21 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
-            box.style.background = 'none';
-            box.style.backgroundColor = 'rgb(102, 150, 210)';
-            document.querySelector('#postInternalId').style.opacity = '100%';
-            box.classList.add('postOpen');
-            PostHeader();
-            document.body.appendChild(box);
+
+            if (!box.classList.contains('postOpen')) {
+                box.classList.add('postOpen');
+                box.style.cursor = "default";
+                box.style.opacity = "100%";
+                box.style.background = 'none';
+                box.style.backgroundColor = 'rgb(102, 150, 210)';
+                document.querySelector('#postInternalId').style.opacity = '100%';
+                box.classList.add('postOpen');
+                PostHeader();
+                document.body.appendChild(box);
+            }
         })
     }
-    for (const box of boxes) {
-        box.removeEventListener('click', event);
-    }
 }
-
 
 let FunZone = () => {
     var funZone = document.createElement('div');
