@@ -149,32 +149,69 @@ body {
 
 .p1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 10%;
+    margin-left: 2%;
     font-size: 2rem;
     font-weight: bolder;
     background-color: rgb(46, 42, 42);
 }
 
 #postInternalId {
-    height: 45%;
-    width: 40%;
-    margin-top: 5%;
-    margin-left:5%;
+    height: 10%;
+    width: 98%;
+    margin: 1%;
+    margin-top: 2.5%;
     background-color: red;
     border-radius: 10px;
     overflow: auto;
     scroll-behavior:smooth;
     opacity: 0%;
+    float: left;
 }
 
+
 #postInternalId:hover {
-    height: 50%;
-    width: 60%;
+    height: 80vh;
+    transition: width 2s, height 2s;
+}
+
+#postInternalId1 {
+    height: 10%;
+    width: 98%;
+    margin: 1%;
+    background-color: rgb(45, 169, 190);
+    border-radius: 10px;
+    overflow: auto;
+    scroll-behavior:smooth;
+    opacity: 0%;
+    float: right;
+}
+
+
+#postInternalId1:hover {
+    height: 70vh;
+    transition: width 2s, height 2s;
+}
+
+#postInternalId2 {
+    height: 10%;
+    width: 98%;
+    margin: 1%;
+    background-color: rgb(209, 182, 26);
+    border-radius: 10px;
+    overflow: auto;
+    scroll-behavior:smooth;
+    opacity: 0%;
+    float: right;
+}
+
+
+#postInternalId2:hover {
+    height: 55vh;
     transition: width 2s, height 2s;
 }
 
 h2 {
-    margin-left: 20px;
+    text-align: center;
 }
 
 pre {

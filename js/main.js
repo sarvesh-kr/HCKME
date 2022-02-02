@@ -79,61 +79,188 @@ let Post = () => {
         <h2>"Hello World" Program in Java, C, C++, Python</h2>
         <p class="p1">
             <b>HelloWorld.java</b>
-            <pre><code>
-            class HelloWorld {
-                public static void main(String[] args) { 
-                    System.out.println("Hello, World"); <br>
-                }
-            }
-            </code></pre>
+<pre><code>
+    class HelloWorld {
+        public static void main(String[] args) { 
+            System.out.println("Hello, World"); <br>
+        }
+    }
+</code></pre>
         </p>
         <p class="p1">
             <b>HelloWorld.c</b>
-            <pre><code>
-            #include <stdio.h>
+<pre><code>
+    #include <stdio.h>
 
-            int main() {
-                printf("Hello, World");
-                return 0;
-            }
-            </code></pre>
+    int main() {
+        printf("Hello, World");
+            return 0;
+    }
+</code></pre>
         </p>
         <p class="p1">
             <b>HelloWorld.cpp</b>
-            <pre><code>
-            #include <iostream>
-            using namespace std;
+<pre><code>
+    #include <iostream>
+    using namespace std;
 
-            //Creating Class with method HelloWorld()
-            class demo
-            {
-                public:
-                void HelloWorld() {
-                    cout << "Hello, World";
-                }
-            };
-            //Driver code
-            int main() {
-                //Creating class object
-                demo demo;
+    //Creating Class with method HelloWorld()
+    class demo
+    {
+        public:
+        void HelloWorld() {
+            cout << "Hello, World";
+        }
+    };
+    //Driver code
+    int main() {
+    //Creating class object
+        demo demo;
 
-                //Calling HelloWorld() method from demo class
-                demo.HelloWorld();
-            }
-            </code></pre>
+        //Calling HelloWorld() method from demo class
+        demo.HelloWorld();
+    }
+</code></pre>
         </p>
         <p class="p1">
             <b>HelloWorld.py</b>
-            <pre><code>
-            print("Hello World");
-            </code></pre>
+<pre><code>
+    print("Hello World");
+</code></pre>
         </p>
     </div>
     
     `;
+
+    var postInternal1 = document.createElement("div");
+    postInternal1.id = 'postInternalId1';
+    postInternal1.className = 'postInternalClass';
+    postInternal1.innerHTML = `
+    
+    <div id="content-1" class="content">
+        <h2>"Hello World" Program in Java, C, C++, Python</h2>
+        <p class="p1">
+            <b>HelloWorld.java</b>
+<pre><code>
+    class HelloWorld {
+        public static void main(String[] args) { 
+            System.out.println("Hello, World"); <br>
+        }
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.c</b>
+<pre><code>
+    #include <stdio.h>
+
+    int main() {
+        printf("Hello, World");
+            return 0;
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.cpp</b>
+<pre><code>
+    #include <iostream>
+    using namespace std;
+
+    //Creating Class with method HelloWorld()
+    class demo
+    {
+        public:
+        void HelloWorld() {
+            cout << "Hello, World";
+        }
+    };
+    //Driver code
+    int main() {
+    //Creating class object
+        demo demo;
+
+        //Calling HelloWorld() method from demo class
+        demo.HelloWorld();
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.py</b>
+<pre><code>
+    print("Hello World");
+</code></pre>
+        </p>
+    </div>
+    
+    `;
+
+    var postInternal2 = document.createElement("div");
+    postInternal2.id = 'postInternalId2';
+    postInternal2.className = 'postInternalClass';
+    postInternal2.innerHTML = `
+    
+    <div id="content-1" class="content">
+        <h2>"Hello World" Program in Java, C, C++, Python</h2>
+        <p class="p1">
+            <b>HelloWorld.java</b>
+<pre><code>
+    class HelloWorld {
+        public static void main(String[] args) { 
+            System.out.println("Hello, World"); <br>
+        }
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.c</b>
+<pre><code>
+    #include <stdio.h>
+
+    int main() {
+        printf("Hello, World");
+            return 0;
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.cpp</b>
+<pre><code>
+    #include <iostream>
+    using namespace std;
+
+    //Creating Class with method HelloWorld()
+    class demo
+    {
+        public:
+        void HelloWorld() {
+            cout << "Hello, World";
+        }
+    };
+    //Driver code
+    int main() {
+    //Creating class object
+        demo demo;
+
+        //Calling HelloWorld() method from demo class
+        demo.HelloWorld();
+    }
+</code></pre>
+        </p>
+        <p class="p1">
+            <b>HelloWorld.py</b>
+<pre><code>
+    print("Hello World");
+</code></pre>
+        </p>
+    </div>
+    
+    `;
+
     document.querySelector('#inBody').appendChild(post);
     document.querySelector('#postId').style.backgroundImage = "url('../img/programmer.png')";
     document.querySelector("#postId").appendChild(postInternal);
+    document.querySelector("#postId").appendChild(postInternal1);
+    document.querySelector("#postId").appendChild(postInternal2);
     //--end
 
     var post1 = document.createElement('div');
@@ -265,6 +392,8 @@ let postOpen = () => {
                 box.style.background = 'none';
                 box.style.backgroundColor = 'rgb(102, 150, 210)';
                 document.querySelector('#postInternalId').style.opacity = '100%';
+                document.querySelector('#postInternalId1').style.opacity = '100%';
+                document.querySelector('#postInternalId2').style.opacity = '100%';
                 box.classList.add('postOpen');
                 PostHeader();
                 document.body.appendChild(box);
