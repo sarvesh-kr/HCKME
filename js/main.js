@@ -19,8 +19,19 @@ let Container = () => {
         <div id="inBody" class="inBodyClass">
             
         </div>
-        <div id="inBodyRight class="inBodyRightClass" style = 'background-image: url("../img/adGif.gif"); background-repeat: no-repeat; float:right; height: 85vh; width: 20vw; border-radius: 20px; color: white; float:right'>
-            <p id="ad" >Ad Panel placeholder</p>
+        <div id="inBodyRight class="inBodyRightClass" style = 'background-image: url("../img/adGif.gif");'>
+            <p id="ad" ><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8895032743556528"
+            crossorigin="anonymous"></script>
+       <!-- Test ad Unit -->
+       <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-8895032743556528"
+            data-ad-slot="9746343569"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+       <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+       </script></p>
         </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
