@@ -226,3 +226,31 @@ pre {
     height: 200px;
     width: 200px;
 }
+
+#historyPanelButtonsId {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.historyButtons {
+    height: 5vh;
+    width: 15vw;
+    margin: 1%;
+    background-color: red;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.historyButtons:hover {
+    opacity: 75%;
+}
+
+.historyPanelClass {
+    height: 90vh;
+    width: 100vw;
+    background-color: purple;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}

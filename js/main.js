@@ -1,5 +1,6 @@
 
 window.onload = () => {
+
     Index();
     contentJsCaller();
 }
@@ -9,6 +10,56 @@ let Index = () => {
     Post();
     postOpen();
 }
+
+let historyPanelButtons = () => {
+
+    var historyPanelButtonsDiv = document.createElement('div');
+    historyPanelButtonsDiv.id = 'historyPanelButtonsId';
+    document.querySelector('#postId2').appendChild(historyPanelButtonsDiv);
+
+    var historyButton1 = document.createElement('button');
+    historyButton1.id = 'historyButton1';
+    historyButton1.className = 'historyButtons';
+    historyButton1.innerHTML = 'Button-1';
+    document.querySelector('#historyPanelButtonsId').appendChild(historyButton1);
+
+    var historyButton2 = document.createElement('button');
+    historyButton2.className = 'historyButtons';
+    historyButton2.innerHTML = 'Button-2';
+    document.querySelector('#historyPanelButtonsId').appendChild(historyButton2);
+
+    historyPanelButtonsClickHandler();
+}
+
+let historyPanelButtonsClickHandler = () => {
+
+    const historyButtonClick = document.querySelectorAll('.historyButtons');
+    historyButtonClick.forEach(el => el.addEventListener('click', event => {
+        document.querySelector('#historyPanelButtonsId').remove();
+        historyPanelDiv();
+    }));
+}
+
+let historyPanelDiv = () => {
+
+    var historyPanel1 = document.createElement('div');
+    historyPanel1.id = 'historyButton1';
+    historyPanel1.className = 'historyPanelClass';
+    document.querySelector('#postId2').appendChild(historyPanel1);
+
+
+    const element = document.getElementById('historyButton1')
+    element.addEventListener("click", () => {
+        alert('hello');
+    });
+
+
+
+    // var historyPanel2 = document.createElement('div');
+    // historyPanel2.className = 'historyPanelClass';
+    // document.querySelector('#postId2').appendChild(historyPanel2);
+}
+
 
 let Container = () => {
     document.body.innerHTML = `
@@ -82,7 +133,7 @@ let Post = () => {
 <pre><code>
     class HelloWorld {
         public static void main(String[] args) { 
-            System.out.println("Hello, World"); <br>
+        System.out.println("Hello, World"); <br>
         }
     }
 </code></pre>
@@ -263,18 +314,22 @@ let Post = () => {
     document.querySelector("#postId").appendChild(postInternal2);
     //--end
 
+    //--Start
     var post1 = document.createElement('div');
     post1.id = 'postId1';
     post1.className = 'postClass';
     // post1.innerHTML = `content-2`;
     document.querySelector('#inBody').appendChild(post1);
     document.querySelector('#postId1').style.backgroundImage = "url('../img/hckmeNews.png')";
+    //end--
 
+    //--start
     var post2 = document.createElement('div');
     post2.id = 'postId2';
     post2.className = 'postClass';
     // post2.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post2);
+    //end--
 
     var post3 = document.createElement('div');
     post3.id = 'postId3';
@@ -397,6 +452,7 @@ let postOpen = () => {
                 box.classList.add('postOpen');
                 PostHeader();
                 document.body.appendChild(box);
+                historyPanelButtons();
             }
         })
     }
@@ -413,4 +469,5 @@ let contentJsCaller = () => {
     var script = document.createElement('script');
     script.src = "./js/content.js";
     document.head.appendChild(script);
+    // alert('hellllo');
 }
