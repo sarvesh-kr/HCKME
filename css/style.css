@@ -1,4 +1,3 @@
-
 body {
     height: 100%;
     width: 100%;
@@ -16,7 +15,7 @@ body {
 #headId {
     height: 10vh;
     width: 100vw;
-    background-color: rgb(0, 69, 160);
+    background-color: rgba(97, 99, 96, 0.562);
     overflow: hidden;
     float: inline-end;
     border-bottom-left-radius: 25px;
@@ -24,7 +23,7 @@ body {
 }
 
 #logoText {
-    margin: 15px; 
+    margin: 15px;
     color: antiquewhite;
     font-weight: bolder;
     font-family: cursive;
@@ -47,7 +46,7 @@ body {
 #inBodyRight {
     height: 85vh;
     width: 15vw;
-    background-color: red;
+    background-color: rgba(130, 143, 127, 0.479);
     float: right;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -56,7 +55,7 @@ body {
 #inBodyLeft {
     height: 85vh;
     width: 15vw;
-    background-color: red;
+    background-color: rgba(130, 143, 127, 0.479);
     float: left;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -65,7 +64,8 @@ body {
 #footerId {
     height: 5vh;
     width: 100vw;
-    background-color: rgb(0, 69, 160);;
+    background-color: rgba(97, 99, 96, 0.562);
+    ;
     float: right;
     text-align: center;
 }
@@ -91,8 +91,8 @@ body {
 .postClass:hover {
     cursor: pointer;
     opacity: 75%;
-    background-color: red;
-    box-shadow: 2px 2px 5px rgb(0, 69, 160);
+    background-color: rgba(97, 99, 96, 0.562);
+    box-shadow: 2px 2px 5px rgba(130, 143, 127, 0.479);
 }
 
 .postOpen {
@@ -140,16 +140,15 @@ body {
     font-family: cursive;
     font-size: 175%;
     text-shadow: 2px 2px 5px rgb(91, 151, 230);
-
 }
 
 .content {
-     text-decoration-color: rgb(117, 157, 209);
-     overflow: auto;
+    text-decoration-color: rgb(117, 157, 209);
+    overflow: auto;
 }
 
 .p1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 2%;
     font-size: 2rem;
     font-weight: bolder;
@@ -164,11 +163,10 @@ body {
     background-color: red;
     border-radius: 10px;
     overflow: hidden;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     opacity: 0%;
     float: left;
 }
-
 
 #postInternalId:hover {
     height: 80vh;
@@ -183,7 +181,7 @@ body {
     background-color: rgb(45, 169, 190);
     border-radius: 10px;
     overflow: hidden;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     opacity: 0%;
     float: right;
 }
@@ -201,11 +199,10 @@ body {
     background-color: rgb(209, 182, 26);
     border-radius: 10px;
     overflow: hidden;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     opacity: 0%;
     float: right;
 }
-
 
 #postInternalId2:hover {
     height: 55vh;
