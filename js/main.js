@@ -508,3 +508,9 @@ let historyDiv = () => {
     }
 
 }
+
+let homeContentSearchFun = () => {
+
+    //
+
+}
