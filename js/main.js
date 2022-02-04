@@ -261,7 +261,7 @@ let Post = () => {
     `;
 
     document.querySelector('#inBody').appendChild(post);
-    document.querySelector('#postId').style.backgroundImage = "url('../img/programmer.png')";
+    document.querySelector('#postId').style.backgroundImage = "url('../img/programmer.gif')";
     document.querySelector("#postId").appendChild(postInternal);
     document.querySelector("#postId").appendChild(postInternal1);
     document.querySelector("#postId").appendChild(postInternal2);
@@ -273,7 +273,7 @@ let Post = () => {
     post1.className = 'postClass';
     // post1.innerHTML = `content-2`;
     document.querySelector('#inBody').appendChild(post1);
-    document.querySelector('#postId1').style.backgroundImage = "url('../img/hckmeNews.png')";
+    document.querySelector('#postId1').style.backgroundImage = "url('../img/hckmeNews.gif')";
     //end--
 
     //--start
@@ -282,6 +282,7 @@ let Post = () => {
     post2.className = 'postClass';
     // post2.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post2);
+    document.querySelector('#postId2').style.backgroundImage = "url('../img/history.png')";
     //end--
 
     var post3 = document.createElement('div');
