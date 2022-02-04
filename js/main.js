@@ -449,7 +449,7 @@ let postOpen = () => {
                 box.style.cursor = "default";
                 box.style.opacity = "100%";
                 box.style.background = 'none';
-                box.style.backgroundColor = 'rgb(102, 150, 210)';
+                // box.style.backgroundColor = 'rgb(102, 150, 210)';
                 document.querySelector('#postInternalId').style.opacity = '100%';
                 document.querySelector('#postInternalId1').style.opacity = '100%';
                 document.querySelector('#postInternalId2').style.opacity = '100%';
