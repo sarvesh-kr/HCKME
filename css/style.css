@@ -230,7 +230,7 @@ pre {
     margin: 20px;
     margin-right: 75px;
     box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
-    filter: grayscale(100%)
+    filter: grayscale(100%);
 }
 
 #headSearchInputId {
@@ -238,6 +238,8 @@ pre {
     border-color: white;
     float: left;
     outline: none;
+    border-radius: 10px;
+    border-style: dashed;
 }
 
 #headSearchButtonId {

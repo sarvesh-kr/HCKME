@@ -18,7 +18,7 @@ let Container = () => {
         <div id="headId">
             <div id="logoText">HCKME</div>
             <div id="headSearchInputDiv">
-                <input type="text" placeholder="Search" id="headSearchInputId"><button type="submit" id="headSearchButtonId">&#128269</button>
+                <input type="text" placeholder="Search" id="headSearchInputId">&nbsp;<button type="submit" id="headSearchButtonId">&#128269</button>
             </div>
         </div>
         <div id="inBodyLeft" class="inBodyLeftClass" '>
