@@ -6,6 +6,7 @@ window.onload = () => {
 
 let Index = () => {
     Container();
+    contentMenu();
     Post();
     postOpen();
 }
@@ -67,6 +68,55 @@ let PostHeader = () => {
     document.querySelector('#postHeaderId').appendChild(closeButton);
     var reset = document.getElementById("containerId");
     reset.remove();
+}
+
+let contentMenu = () => {
+
+    var inBLMI = document.createElement('div');
+    inBLMI.id = 'inBLMId';
+    document.querySelector('#inBodyLeft').appendChild(inBLMI);
+
+    var inBCM1 = document.createElement('div');
+    inBCM1.id = 'inBCM1Id';
+    inBCM1.className = 'inBCM';
+    inBCM1.innerHTML = `Menu`;
+    document.querySelector('#inBLMId').appendChild(inBCM1);
+
+    var inBCM2 = document.createElement('div');
+    inBCM2.id = 'inBCM2Id';
+    inBCM2.className = 'inBCM';
+    inBCM2.innerHTML = `Program Source codes`;
+    document.querySelector('#inBLMId').appendChild(inBCM2);
+
+    var inBCM3 = document.createElement('div');
+    inBCM3.id = 'inBCM3Id';
+    inBCM3.className = 'inBCM';
+    inBCM3.innerHTML = `Item -2`;
+    document.querySelector('#inBLMId').appendChild(inBCM3);
+
+    var inBCM4 = document.createElement('div');
+    inBCM4.id = 'inBCM4Id';
+    inBCM4.className = 'inBCM';
+    inBCM4.innerHTML = `Item-1`;
+    document.querySelector('#inBLMId').appendChild(inBCM4);
+
+    var inBCM5 = document.createElement('div');
+    inBCM5.id = 'inBCM5Id';
+    inBCM5.className = 'inBCM';
+    inBCM5.innerHTML = `Languages`;
+    document.querySelector('#inBLMId').appendChild(inBCM5);
+
+    var inBCM6 = document.createElement('div');
+    inBCM6.id = 'inBCM6Id';
+    inBCM6.className = 'inBCM';
+    inBCM6.innerHTML = `About Us`;
+    document.querySelector('#inBLMId').appendChild(inBCM6);
+
+    var inBCM7 = document.createElement('div');
+    inBCM7.id = 'inBCM7Id';
+    inBCM7.className = 'inBCM';
+    inBCM7.innerHTML = `Contact Us`;
+    document.querySelector('#inBLMId').appendChild(inBCM7);
 }
 
 let Post = () => {
