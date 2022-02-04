@@ -26,6 +26,7 @@ body {
     margin: 15px;
     color: antiquewhite;
     font-weight: bolder;
+    float: left;
     font-family: cursive;
     font-size: 175%;
     text-shadow: 2px 2px 5px rgb(91, 151, 230);
@@ -68,6 +69,8 @@ body {
     ;
     float: right;
     text-align: center;
+    color: antiquewhite;
+    text-shadow: 2px 2px 5px rgb(91, 151, 230)
 }
 
 .postClass {
@@ -134,7 +137,9 @@ body {
 #postHeaderTextDivId {
     background-color: rgb(0, 69, 160);
     float: left;
-    padding: 15px;
+    margin: 5px;
+    width: 60%;
+    /* padding: 15px; */
     color: antiquewhite;
     font-weight: bolder;
     font-family: cursive;
@@ -224,30 +229,46 @@ pre {
     width: 200px;
 }
 
-#historyPanelButtonsId {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
+.historyStoryClass {
+    height: 20%;
+    width: 18%;
+    background-color: rgba(189, 201, 224, 0.486);
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
 }
 
-.historyButtons {
-    height: 5vh;
-    width: 15vw;
-    margin: 1%;
-    background-color: red;
-    border-width: 0px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.historyButtons:hover {
-    opacity: 75%;
-}
-
-.historyPanelClass {
+.historyStoryClassOpen {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
     height: 90vh;
     width: 100vw;
-    background-color: purple;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    transition: width 2s, height 2s;
+    color: black;
+    background-color: rgb(187, 184, 184) !important;
+}
+
+#headSearchInputDiv {
+    float: right;
+    margin: 20px;
+    margin-right: 75px;
+    box-shadow: 2px 2px 5px rgb(91, 151, 230);
+}
+
+#headSearchInputId {
+    border-width: 4px;
+    border-color: white;
+    float: left;
+}
+
+#headSearchButtonId {
+    border-color: white;
+    border-width: 5px;
+    float: inline-end;
 }

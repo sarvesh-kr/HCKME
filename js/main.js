@@ -1,4 +1,3 @@
-
 window.onload = () => {
 
     Index();
@@ -11,61 +10,15 @@ let Index = () => {
     postOpen();
 }
 
-let historyPanelButtons = () => {
-
-    var historyPanelButtonsDiv = document.createElement('div');
-    historyPanelButtonsDiv.id = 'historyPanelButtonsId';
-    document.querySelector('#postId2').appendChild(historyPanelButtonsDiv);
-
-    var historyButton1 = document.createElement('button');
-    historyButton1.id = 'historyButton1';
-    historyButton1.className = 'historyButtons';
-    historyButton1.innerHTML = 'Button-1';
-    document.querySelector('#historyPanelButtonsId').appendChild(historyButton1);
-
-    var historyButton2 = document.createElement('button');
-    historyButton2.className = 'historyButtons';
-    historyButton2.innerHTML = 'Button-2';
-    document.querySelector('#historyPanelButtonsId').appendChild(historyButton2);
-
-    historyPanelButtonsClickHandler();
-}
-
-let historyPanelButtonsClickHandler = () => {
-
-    const historyButtonClick = document.querySelectorAll('.historyButtons');
-    historyButtonClick.forEach(el => el.addEventListener('click', event => {
-        document.querySelector('#historyPanelButtonsId').remove();
-        historyPanelDiv();
-    }));
-}
-
-let historyPanelDiv = () => {
-
-    var historyPanel1 = document.createElement('div');
-    historyPanel1.id = 'historyButton1';
-    historyPanel1.className = 'historyPanelClass';
-    document.querySelector('#postId2').appendChild(historyPanel1);
-
-
-    const element = document.getElementById('historyButton1')
-    element.addEventListener("click", () => {
-        alert('hello');
-    });
-
-
-
-    // var historyPanel2 = document.createElement('div');
-    // historyPanel2.className = 'historyPanelClass';
-    // document.querySelector('#postId2').appendChild(historyPanel2);
-}
-
 
 let Container = () => {
     document.body.innerHTML = `
     <div id="containerId">
         <div id="headId">
             <div id="logoText">HCKME</div>
+            <div id="headSearchInputDiv">
+                <input type="text" placeholder="Search" id="headSearchInputId"><button type="submit" id="headSearchButtonId">&#128269</button>
+            </div>
         </div>
         <div id="inBodyLeft" class="inBodyLeftClass" '>
             
@@ -449,10 +402,9 @@ let postOpen = () => {
                 document.querySelector('#postInternalId').style.opacity = '100%';
                 document.querySelector('#postInternalId1').style.opacity = '100%';
                 document.querySelector('#postInternalId2').style.opacity = '100%';
-                box.classList.add('postOpen');
                 PostHeader();
                 document.body.appendChild(box);
-                historyPanelButtons();
+                historyDiv();
             }
         })
     }
@@ -470,4 +422,38 @@ let contentJsCaller = () => {
     script.src = "./js/content.js";
     document.head.appendChild(script);
     // alert('hellllo');
+}
+
+
+let historyDiv = () => {
+
+    var historyStory1 = document.createElement('div');
+    historyStory1.id = 'historyStory1Id';
+    historyStory1.className = 'historyStoryClass';
+    historyStory1.innerHTML = 'story-1';
+    document.querySelector('#postId2').appendChild(historyStory1);
+
+    var historyStory2 = document.createElement('div');
+    historyStory2.id = 'historyStory2Id';
+    historyStory2.className = 'historyStoryClass';
+    historyStory2.innerHTML = 'story-2';
+    document.querySelector('#postId2').appendChild(historyStory2);
+
+    const boxes = [...document.querySelectorAll(".historyStoryClass")];
+    for (const box of boxes) {
+        box.addEventListener('click', event => {
+
+            if (!box.classList.contains('historyStoryClassOpen')) {
+                document.querySelector('.postClass').remove();
+                box.classList.add('historyStoryClassOpen');
+                box.style.cursor = "default";
+                box.style.opacity = "100%";
+                box.style.background = 'none';
+                box.style.backgroundColor = 'rgb(102, 150, 210)';
+                box.classList.add('postOpen');
+                document.body.appendChild(box);
+            }
+        })
+    }
+
 }
