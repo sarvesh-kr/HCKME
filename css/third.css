@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    float: right;
+    color: antiquewhite;
+}
+
+#thEx {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(17, 17, 16, 0.836);
+    overflow: hidden;
+    float: inline-end;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#cu {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgba(17, 17, 16, 0.692);
+    float: left;
+    color: whitesmoke;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: auto;
+    position: relative;
+}
+
+h1 {
+    margin: 15px;
+    color: antiquewhite;
+    font-weight: bolder;
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 250%;
+    text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
+}
+
+h2,
+p {
+    margin: 50px;
+}
