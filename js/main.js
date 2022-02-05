@@ -1,14 +1,15 @@
 window.onload = () => {
 
     Index();
-    contentJsCaller();
 }
+
 
 let Index = () => {
     Container();
     contentMenu();
     Post();
     postOpen();
+    callerFunnyAvatar();
 }
 
 
@@ -120,6 +121,7 @@ let contentMenu = () => {
 }
 
 let Post = () => {
+
     //--Start
     var post = document.createElement('div');
     post.id = 'postId';
@@ -341,6 +343,7 @@ let Post = () => {
     // post3.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post3);
 
+
     var post4 = document.createElement('div');
     post4.id = 'postId4';
     post4.className = 'postClass';
@@ -388,6 +391,7 @@ let Post = () => {
     post11.className = 'postClass';
     // post11.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post11);
+    document.querySelector('#postId11').style.backgroundImage = "url('../img/nih.gif')";
 }
 
 let postOpen = () => {
@@ -395,6 +399,7 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
+            document.querySelector('#funnyAvatarId').style.display = "block";
 
             if (!box.classList.contains('postOpen')) {
                 box.classList.add('postOpen');
@@ -411,20 +416,6 @@ let postOpen = () => {
             }
         })
     }
-}
-
-let FunZone = () => {
-    var funZone = document.createElement('div');
-    funZone.id = 'funZoneId';
-    funZone.class = 'funZoneClass';
-    document.querySelector('#inBody').appendChild(funZone);
-}
-
-let contentJsCaller = () => {
-    var script = document.createElement('script');
-    script.src = "./js/content.js";
-    document.head.appendChild(script);
-    // alert('hellllo');
 }
 
 
