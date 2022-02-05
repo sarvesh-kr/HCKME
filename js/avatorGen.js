@@ -39,6 +39,7 @@ function openButton() {
 function closeDiv() {
     document.getElementById("inBodyFunnyAvatarId").remove();
     callerFunnyAvatar();
+    document.querySelector('#funnyAvatarId').style.display = "block";
 }
 
 

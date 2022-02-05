@@ -416,6 +416,7 @@ let postOpen = () => {
                 PostHeader();
                 document.body.appendChild(box);
                 historyDiv();
+
             }
         })
     }
