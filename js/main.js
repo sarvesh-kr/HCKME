@@ -385,6 +385,7 @@ let Post = () => {
     post10.className = 'postClass';
     // post10.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post10);
+    document.querySelector('#postId10').style.backgroundImage = "url('../img/hypno.gif')";
 
     var post11 = document.createElement('div');
     post11.id = 'postId11';
@@ -399,6 +400,8 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
+
+            concentrationCaller();
             document.querySelector('#funnyAvatarId').style.display = "block";
 
             if (!box.classList.contains('postOpen')) {
