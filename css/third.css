@@ -23,7 +23,7 @@ body {
 }
 
 #cu {
-    height: 90vh;
+    height: 84vh;
     width: 100vw;
     background-color: rgba(17, 17, 16, 0.692);
     float: left;
@@ -47,4 +47,15 @@ h1 {
 h2,
 p {
     margin: 50px;
+}
+
+#dmcaLogo {
+    height: 6vh;
+    width: 100vw;
+    background-color: rgba(17, 17, 16, 0.692);
+    float: left;
+}
+
+#dmc {
+    float: right;
 }
