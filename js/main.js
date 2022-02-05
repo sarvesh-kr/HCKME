@@ -112,12 +112,49 @@ let contentMenu = () => {
     inBCM6.className = 'inBCM';
     inBCM6.innerHTML = `About Us`;
     document.querySelector('#inBLMId').appendChild(inBCM6);
+    inBCM6.addEventListener('click', event => {
+        web = 'https://hckme.live/AboutUs';
+        window.location.href = web;
+        console.log(webLink);
+    });
 
     var inBCM7 = document.createElement('div');
     inBCM7.id = 'inBCM7Id';
     inBCM7.className = 'inBCM';
     inBCM7.innerHTML = `Contact Us`;
     document.querySelector('#inBLMId').appendChild(inBCM7);
+    inBCM7.addEventListener('click', event => {
+        web = 'https://hckme.live/ContactUs';
+        window.location.href = web;
+        console.log(webLink);
+    });
+
+    var inBCM8 = document.createElement('div');
+    inBCM8.id = 'inBCM8Id';
+    inBCM8.className = 'inBCM';
+    inBCM8.innerHTML = `Privacy Policy`;
+    document.querySelector('#inBLMId').appendChild(inBCM8);
+    inBCM8.addEventListener('click', event => {
+        web = 'https://hckme.live/PrivacyPolicy';
+        window.location.href = web;
+        console.log(webLink);
+    });
+
+    var inBCM9 = document.createElement('div');
+    inBCM9.id = 'inBCM9Id';
+    inBCM9.className = 'inBCM';
+    inBCM9.innerHTML = `DMCA`;
+    document.querySelector('#inBLMId').appendChild(inBCM9);
+    inBCM9.addEventListener('click', event => {
+        web = 'https://hckme.live/DMCA';
+        window.location.href = web;
+        console.log(webLink);
+    });
+}
+
+function myhref(webLink) {
+    window.location.href = web;
+    console.log(webLink);
 }
 
 let Post = () => {
