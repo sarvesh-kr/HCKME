@@ -1,15 +1,14 @@
+@media screen and (min-width:662px) {
     body {
         height: 100%;
         width: 100%;
         margin: 0;
     }
-    
     #containerId {
         height: 100vh;
         width: 100vw;
         position: fixed;
     }
-    
     #headId {
         height: 10vh;
         width: 100vw;
@@ -19,7 +18,6 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
-    
     #logoText {
         margin: 15px;
         color: antiquewhite;
@@ -29,7 +27,6 @@
         font-size: 250%;
         text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
     }
-    
     #inBody {
         height: 85vh;
         width: 70vw;
@@ -41,7 +38,6 @@
         overflow: auto;
         position: relative;
     }
-    
     #inBodyRight {
         height: 85vh;
         width: 15vw;
@@ -50,7 +46,6 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
-    
     #inBodyLeft {
         height: 85vh;
         width: 15vw;
@@ -59,7 +54,6 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
-    
     #footerId {
         height: 5vh;
         width: 100vw;
@@ -69,7 +63,6 @@
         color: antiquewhite;
         text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
     }
-    
     .postClass {
         margin: 1%;
         height: 25vh;
@@ -81,19 +74,16 @@
         background-size: 100% 100%;
         overflow: hidden;
     }
-    
     #ad {
         padding: 5%;
         font-size: xx-large;
         font-weight: bolder;
     }
-    
     .postClass:hover {
         cursor: pointer;
         opacity: 75%;
         box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.877);
     }
-    
     .postOpen {
         margin: 0;
         height: 90vh;
@@ -102,7 +92,6 @@
         color: whitesmoke;
         background-color: rgba(17, 17, 16, 0.692) !important;
     }
-    
     #closeButtonId {
         height: 5vh;
         width: 5vw;
@@ -115,12 +104,10 @@
         margin: 5px;
         cursor: pointer;
     }
-    
     #closeButtonId:hover {
         opacity: 75%;
         background-color: red;
     }
-    
     #postHeaderId {
         height: 10vh;
         width: 100vw;
@@ -129,7 +116,6 @@
         border-bottom-right-radius: 25px;
         overflow: hidden;
     }
-    
     #postHeaderTextDivId {
         float: left;
         margin: 10px;
@@ -141,11 +127,9 @@
         font-size: 175%;
         text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
     }
-    
     .content {
         overflow: auto;
     }
-    
     .p1 {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin-left: 2%;
@@ -153,7 +137,6 @@
         font-weight: bolder;
         background-color: rgb(46, 42, 42);
     }
-    
     .postInternalClass {
         height: 10%;
         width: 98%;
@@ -166,39 +149,32 @@
         opacity: 0%;
         float: left;
     }
-    
     #postInternalId:hover {
         height: 80vh;
         overflow: auto;
         transition: width 2s, height 2s;
     }
-    
     #postInternalId1:hover {
         height: 70vh;
         overflow: auto;
         transition: width 2s, height 2s;
     }
-    
     #postInternalId2:hover {
         height: 55vh;
         overflow: auto;
         transition: width 2s, height 2s;
     }
-    
     h2 {
         text-align: center;
     }
-    
     pre {
         font-size: 1rem;
         font-weight: bold;
     }
-    
     #funZoneId {
         height: 200px;
         width: 200px;
     }
-    
     .historyStoryClass {
         height: 20%;
         width: 18%;
@@ -208,7 +184,6 @@
         border-radius: 10px;
         cursor: pointer;
     }
-    
     .historyStoryClassOpen {
         top: 0;
         bottom: 0;
@@ -224,7 +199,6 @@
         color: black;
         background-color: rgba(17, 17, 16, 0.692) !important;
     }
-    
     #headSearchInputDiv {
         float: right;
         margin: 20px;
@@ -232,7 +206,6 @@
         box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
         filter: grayscale(100%);
     }
-    
     #headSearchInputId {
         border-width: 4px;
         border-color: white;
@@ -241,20 +214,17 @@
         border-radius: 10px;
         border-style: dashed;
     }
-    
     #headSearchButtonId {
         border-color: white;
         border-width: 5px;
         float: inline-end;
         cursor: pointer;
     }
-    
     #inBLMId {
         height: 60vh;
         width: 20vw;
         margin-top: 25px;
     }
-    
     .inBCM {
         padding-top: 5%;
         margin-top: 2%;
@@ -270,12 +240,10 @@
         font-size: 100%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    
     .inBCM:hover {
         opacity: 50%;
         cursor: pointer;
     }
-    
     #funnyAvatarId {
         margin: 5%;
         height: 18vh;
@@ -284,14 +252,12 @@
         border-radius: 5px;
         display: none;
     }
-    
     #infunnyAvatarLabelId {
         font-size: 150%;
         font-weight: bolder;
         font-family: cursive;
         margin-left: 100px;
     }
-    
     #userNameFunnyAvatarId {
         border-radius: 5px;
         margin-left: 20%;
@@ -302,7 +268,6 @@
         /* border-color: rgb(38, 0, 255); */
         box-shadow: -5px 5px 1px rgb(38, 0, 255);
     }
-    
     #buttonOpenFunnyAvatarId {
         border-radius: 5px;
         outline: none;
@@ -310,11 +275,9 @@
         border-width: 7px;
         box-shadow: 5px -5px 1px rgb(38, 0, 255);
     }
-    
     #buttonOpenFunnyAvatarId {
         cursor: pointer;
     }
-    
     #inBodyFunnyAvatarId {
         margin: 7%;
         height: 40vh;
@@ -323,7 +286,6 @@
         box-shadow: -2px 4px 50px rgb(99, 97, 209);
         transition: width 2s;
     }
-    
     #inBodyFunnyAvatarId:hover {
         margin: 7%;
         height: 50vh;
@@ -331,43 +293,36 @@
         background-color: white;
         box-shadow: -2px 4px 50px rgb(99, 97, 209);
     }
-    
     #hckmeAvatarScreenHeaderId {
         height: 20%;
         width: 50vw;
         background-color: rgba(17, 17, 16, 0.836);
         float: left;
     }
-    
     #funnyAvatarDiv2Id {
         height: 80%;
         width: 100%;
         background-color: rgba(17, 17, 16, 0.678);
         float: right;
     }
-    
     #funnyAvatarDiv1Id {
         text-align: center;
         float: left;
     }
-    
     #buttonCloseFunnyAvatarId {
         float: right;
         margin: 5px;
         border-width: 0;
         border-radius: 2px;
     }
-    
     #buttonCloseFunnyAvatarId:hover {
         cursor: pointer;
         background-color: red;
     }
-    
     #funnyAvatarBodyText {
         font-size: 125%;
         font-family: cursive;
     }
-    
     #concentrationDivId {
         top: 0;
         bottom: 0;
@@ -381,7 +336,6 @@
         border-radius: 10px;
         animation: concentrateAnim 1s infinite;
     }
-    
     @keyframes concentrateAnim {
         0% {
             box-shadow: 0px 0px 10px rgb(183, 192, 184);
@@ -399,3 +353,364 @@
             box-shadow: 0px 0px 10px rgb(5, 5, 5);
         }
     }
+}
+
+@media screen and (max-width:661px) {
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    #containerId {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+    }
+    #headId {
+        height: 10vh;
+        width: 100vw;
+        background-color: rgba(17, 17, 16, 0.836);
+        overflow: hidden;
+        float: inline-end;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    #logoText {
+        margin: 15px;
+        color: antiquewhite;
+        font-weight: bolder;
+        float: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 250%;
+        text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
+    }
+    #inBody {
+        height: 85vh;
+        width: 100vw;
+        background-color: rgba(17, 17, 16, 0.692);
+        float: left;
+        color: whitesmoke;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        overflow: auto;
+        position: relative;
+    }
+    #inBodyRight {
+        height: 85vh;
+        width: 15vw;
+        background-color: rgba(17, 17, 16, 0.692);
+        float: right;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: none;
+    }
+    #inBodyLeft {
+        height: 85vh;
+        width: 15vw;
+        background-color: rgba(17, 17, 16, 0.692);
+        float: left;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: none;
+    }
+    #footerId {
+        height: 5vh;
+        width: 100vw;
+        background-color: rgba(17, 17, 16, 0.836);
+        float: right;
+        text-align: center;
+        color: antiquewhite;
+        text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
+    }
+    .postClass {
+        margin-left: 5%;
+        margin-top: 2%;
+        height: 25vh;
+        width: 90vw;
+        background-color: rgba(17, 17, 16, 0.377);
+        float: left;
+        border-radius: 10px;
+        border-width: 0;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    #ad {
+        padding: 5%;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    .postClass:hover {
+        cursor: pointer;
+        opacity: 75%;
+        box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.877);
+    }
+    .postOpen {
+        margin: 0;
+        height: 90vh;
+        width: 100vw;
+        transition: width 2s, height 2s;
+        color: whitesmoke;
+        background-color: rgba(17, 17, 16, 0.692) !important;
+    }
+    #closeButtonId {
+        height: 5vh;
+        width: 10vw;
+        background-color: rgb(5, 26, 54);
+        overflow: hidden;
+        border-width: 0;
+        border-radius: 10px;
+        color: antiquewhite;
+        float: right;
+        margin: 5px;
+        cursor: pointer;
+    }
+    #closeButtonId:hover {
+        opacity: 75%;
+        background-color: red;
+    }
+    #postHeaderId {
+        height: 10vh;
+        width: 100vw;
+        background-color: rgba(17, 17, 16, 0.836);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        overflow: hidden;
+    }
+    #postHeaderTextDivId {
+        float: left;
+        margin: 10px;
+        width: 70%;
+        height: 40px;
+        color: antiquewhite;
+        font-weight: bolder;
+        font-family: cursive;
+        font-size: 175%;
+        text-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
+    }
+    .content {
+        overflow: auto;
+    }
+    .p1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 2%;
+        font-size: 2rem;
+        font-weight: bolder;
+        background-color: rgb(46, 42, 42);
+    }
+    .postInternalClass {
+        height: 10%;
+        width: 98%;
+        margin: 1%;
+        margin-top: 2.5%;
+        background-color: rgba(17, 17, 16, 0.692);
+        border-radius: 10px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        opacity: 0%;
+        float: left;
+    }
+    #postInternalId:hover {
+        height: 80vh;
+        overflow: auto;
+        transition: width 2s, height 2s;
+    }
+    #postInternalId1:hover {
+        height: 70vh;
+        overflow: auto;
+        transition: width 2s, height 2s;
+    }
+    #postInternalId2:hover {
+        height: 55vh;
+        overflow: auto;
+        transition: width 2s, height 2s;
+    }
+    h2 {
+        text-align: center;
+    }
+    pre {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #funZoneId {
+        height: 200px;
+        width: 200px;
+    }
+    .historyStoryClass {
+        height: 20%;
+        width: 18%;
+        background-color: rgba(17, 17, 16, 0.692);
+        float: left;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .historyStoryClassOpen {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-align: center;
+        margin: 0;
+        height: 90vh;
+        width: 100vw;
+        transition: width 2s, height 2s;
+        color: black;
+        background-color: rgba(17, 17, 16, 0.692) !important;
+    }
+    #headSearchInputDiv {
+        float: right;
+        margin: 20px;
+        margin-right: 75px;
+        box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
+        filter: grayscale(100%);
+    }
+    #headSearchInputId {
+        border-width: 4px;
+        border-color: white;
+        float: left;
+        outline: none;
+        border-radius: 10px;
+        border-style: dashed;
+    }
+    #headSearchButtonId {
+        border-color: white;
+        border-width: 5px;
+        float: inline-end;
+        cursor: pointer;
+    }
+    #inBLMId {
+        height: 60vh;
+        width: 20vw;
+        margin-top: 25px;
+    }
+    .inBCM {
+        padding-top: 5%;
+        margin-top: 2%;
+        height: 5vh;
+        width: 15vw;
+        border-radius: 10px;
+        margin-top: 2px;
+        background-color: rgba(17, 17, 16, 0.479);
+        float: left;
+        color: rgb(224, 220, 220);
+        text-align: center;
+        font-weight: bolder;
+        font-size: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .inBCM:hover {
+        opacity: 50%;
+        cursor: pointer;
+    }
+    #funnyAvatarId {
+        margin: 5%;
+        height: 20vh;
+        width: 80vw;
+        background-color: rgba(48, 47, 58, 0.171);
+        border-radius: 5px;
+        display: none;
+    }
+    #infunnyAvatarLabelId {
+        font-size: 150%;
+        font-weight: bolder;
+        font-family: cursive;
+        margin-left: 100px;
+    }
+    #userNameFunnyAvatarId {
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 5%;
+        outline: none;
+        border-width: 5px;
+        border-color: antiquewhite;
+        /* border-color: rgb(38, 0, 255); */
+        box-shadow: -5px 5px 1px rgb(38, 0, 255);
+    }
+    #buttonOpenFunnyAvatarId {
+        border-radius: 5px;
+        outline: none;
+        border-color: antiquewhite;
+        border-width: 7px;
+        box-shadow: 5px -5px 1px rgb(38, 0, 255);
+    }
+    #buttonOpenFunnyAvatarId {
+        cursor: pointer;
+    }
+    #inBodyFunnyAvatarId {
+        margin: 7%;
+        height: 50vh;
+        width: 40vw;
+        background-color: white;
+        box-shadow: -2px 4px 50px rgb(99, 97, 209);
+        transition: width 2s;
+    }
+    #inBodyFunnyAvatarId:hover {
+        margin: 7%;
+        height: 60vh;
+        width: 85vw;
+        background-color: white;
+        box-shadow: -2px 4px 50px rgb(99, 97, 209);
+    }
+    #hckmeAvatarScreenHeaderId {
+        height: 20%;
+        width: 85vw;
+        background-color: rgba(17, 17, 16, 0.836);
+        float: left;
+    }
+    #funnyAvatarDiv2Id {
+        height: 80%;
+        width: 100%;
+        background-color: rgba(17, 17, 16, 0.678);
+        float: right;
+    }
+    #funnyAvatarDiv1Id {
+        text-align: center;
+        float: left;
+    }
+    #buttonCloseFunnyAvatarId {
+        float: right;
+        margin: 5px;
+        border-width: 0;
+        border-radius: 2px;
+    }
+    #buttonCloseFunnyAvatarId:hover {
+        cursor: pointer;
+        background-color: red;
+    }
+    #funnyAvatarBodyText {
+        font-size: 125%;
+        font-family: cursive;
+    }
+    #concentrationDivId {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        margin: auto;
+        height: 450px;
+        width: 450px;
+        background-image: url('../img/hypno.gif');
+        border-radius: 10px;
+        animation: concentrateAnim 1s infinite;
+    }
+    @keyframes concentrateAnim {
+        0% {
+            box-shadow: 0px 0px 10px rgb(183, 192, 184);
+        }
+        25% {
+            box-shadow: 0px 0px 10px rgb(92, 70, 57);
+        }
+        50% {
+            box-shadow: 0px 0px 10px rgb(39, 36, 29);
+        }
+        75% {
+            box-shadow: 0px 0px 10px rgb(26, 23, 12);
+        }
+        100% {
+            box-shadow: 0px 0px 10px rgb(5, 5, 5);
+        }
+    }
+}
