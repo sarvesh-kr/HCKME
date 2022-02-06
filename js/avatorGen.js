@@ -63,7 +63,7 @@ function openDiv() {
 
     var buttonCloseFunnyAvatar = document.createElement('button');
     buttonCloseFunnyAvatar.id = 'buttonCloseFunnyAvatarId';
-    buttonCloseFunnyAvatar.innerHTML = '🗴';
+    buttonCloseFunnyAvatar.innerHTML = '&#10006;';
     document.querySelector("#hckmeAvatarScreenHeaderId").appendChild(buttonCloseFunnyAvatar);
     buttonCloseFunnyAvatar.onclick = function() {
         closeDiv();
