@@ -29,18 +29,7 @@ let Container = () => {
             
         </div>
         <div id="inBodyRight" class="inBodyRightClass" '>
-            <p id="ad" ><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8895032743556528"
-            crossorigin="anonymous"></script>
-            <!-- Test ad Unit -->
-            <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-8895032743556528"
-            data-ad-slot="9746343569"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script></p>
+        
         </div>
         <div id="footerId">
             <p>&copy;Copyright: HCKME</p>
@@ -416,6 +405,7 @@ let Post = () => {
     post9.className = 'postClass';
     // post9.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post9);
+    document.querySelector('#postId9').style.backgroundImage = "url('../img/cssDiv.png')";
 
     var post10 = document.createElement('div');
     post10.id = 'postId10';
@@ -437,6 +427,8 @@ let postOpen = () => {
     const boxes = [...document.querySelectorAll(".postClass")];
     for (const box of boxes) {
         box.addEventListener('click', event => {
+
+            ballJumpCss();
 
             concentrationCaller();
             document.querySelector('#funnyAvatarId').style.display = "block";

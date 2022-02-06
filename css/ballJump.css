@@ -1,0 +1,60 @@
+#ballJumpFloorId {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    height: 500px;
+    width: 500px;
+    background-color: rgba(17, 17, 16, 0.377);
+    rotate: 150deg;
+    transform: perspective(5em) rotateX(50deg);
+    animation: ballFloorAnim 1s infinite;
+    border-color: rgb(8, 40, 82);
+    border-style: groove;
+    border-width: 20px;
+    font-size: 10px;
+    color: antiquewhite;
+}
+
+#ballJumpFloorId::after {
+    content: 'HCKME';
+    color: aliceblue;
+    float: right;
+}
+
+@keyframes ballFloorAnim {
+    99% {
+        opacity: 50%;
+    }
+    50% {
+        transform: perspective(10em) rotateX(-10deg);
+        opacity: 100%;
+    }
+}
+
+#ball {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 200px;
+    transform-style: preserve-3d;
+    animation: ballAnim 1s infinite;
+    box-shadow: -5px 1px 100px rgba(235, 202, 15, 0.096);
+}
+
+@keyframes ballAnim {
+    50% {
+        bottom: 1000px;
+    }
+    50% {
+        top: 500px;
+    }
+}
