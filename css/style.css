@@ -376,7 +376,7 @@
         border-bottom-right-radius: 25px;
     }
     #logoText {
-        margin: 15px;
+        margin: 1%;
         color: antiquewhite;
         font-weight: bolder;
         float: left;
@@ -565,6 +565,7 @@
         margin-right: 75px;
         box-shadow: 2px 2px 5px rgba(17, 17, 16, 0.692);
         filter: grayscale(100%);
+        display: none;
     }
     #headSearchInputId {
         border-width: 4px;
