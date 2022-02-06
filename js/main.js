@@ -6,6 +6,7 @@ window.onload = () => {
 
 let Index = () => {
     Container();
+    logoTextLink();
     contentMenu();
     Post();
     postOpen();
@@ -490,4 +491,10 @@ let homeContentSearchFun = () => {
 
     //
 
+}
+
+let logoTextLink = () => {
+    document.querySelector("#logoText").addEventListener('click', event => {
+        window.location.href = 'https://hckme.live';
+    })
 }
