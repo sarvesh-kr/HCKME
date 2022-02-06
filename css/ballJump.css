@@ -5,13 +5,13 @@
     right: 0;
     margin: auto;
     position: fixed;
-    height: 500px;
-    width: 500px;
+    height: 50vh;
+    width: 40vh;
     background-color: rgba(17, 17, 16, 0.377);
     rotate: 150deg;
     transform: perspective(5em) rotateX(50deg);
     animation: ballFloorAnim 1s infinite;
-    border-color: rgb(8, 40, 82);
+    border-color: rgb(29, 66, 114);
     border-style: groove;
     border-width: 20px;
     font-size: 10px;
