@@ -23,13 +23,13 @@ let Container = () => {
                 <input type="text" placeholder="Search" id="headSearchInputId">&nbsp;<button type="submit" id="headSearchButtonId">&#128269</button>
             </div>
         </div>
-        <div id="inBodyLeft" class="inBodyLeftClass" '>
+        <div id="inBodyLeft" class="inBodyLeftClass" >
             
         </div>
         <div id="inBody" class="inBodyClass">
             
         </div>
-        <div id="inBodyRight" class="inBodyRightClass" '>
+        <div id="inBodyRight" class="inBodyRightClass" >
         
         </div>
         <div id="footerId">
