@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hckme.live
+Token: 9ddae80e5304b07477b13282bd69f500acac1ab950ae932e1e0ae422faa5e06e
