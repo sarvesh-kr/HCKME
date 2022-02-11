@@ -1,0 +1,33 @@
+.projectClass {
+    margin: 10px;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 55);
+    padding: 25px;
+    overflow: hidden;
+}
+
+.projectClass:hover {
+    height: 35vh;
+    transition: width 2s, height 2s;
+}
+
+.project1ButtonClass {
+    margin-top: 10px;
+    height: 35px;
+    width: 100%;
+    background-color: rgb(93, 93, 91);
+    color: antiquewhite;
+}
+
+.project1ButtonClass:hover {
+    cursor: pointer;
+}
+
+.projectsImgClass {
+    margin-top: 10px;
+    height: 70%;
+    width: 100%;
+    background-color: purple;
+}

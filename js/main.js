@@ -434,6 +434,7 @@ let postOpen = () => {
             ballJumpCss();
 
             concentrationCaller();
+
             document.querySelector('#funnyAvatarId').style.display = "block";
 
             if (!box.classList.contains('postOpen')) {
@@ -447,8 +448,8 @@ let postOpen = () => {
                 document.querySelector('#postInternalId2').style.opacity = '100%';
                 PostHeader();
                 document.body.appendChild(box);
+                projects();
                 historyDiv();
-
             }
         })
     }
