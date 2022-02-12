@@ -16,5 +16,4 @@ let projects = () => {
     project1img.src =
         '../img/lilo.jpg';
     document.querySelector("#project1Id").appendChild(project1img);
-    img.innerHTML = 'Added';
 }
