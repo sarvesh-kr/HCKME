@@ -3,16 +3,13 @@ window.onload = () => {
     Index();
 }
 
-
 let Index = () => {
     Container();
     logoTextLink();
     contentMenu();
     Post();
     postOpen();
-    callerFunnyAvatar();
 }
-
 
 let Container = () => {
     document.body.innerHTML = `
@@ -431,62 +428,64 @@ let postOpen = () => {
     for (const box of boxes) {
         box.addEventListener('click', event => {
 
-            ballJumpCss();
-
-            concentrationCaller();
-
-            document.querySelector('#funnyAvatarId').style.display = "block";
+            const postTrack = box.id;
 
             if (!box.classList.contains('postOpen')) {
+
                 box.classList.add('postOpen');
                 box.style.cursor = "default";
                 box.style.opacity = "100%";
                 box.style.background = 'none';
-                // box.style.backgroundColor = 'rgb(102, 150, 210)';
                 document.querySelector('#postInternalId').style.opacity = '100%';
                 document.querySelector('#postInternalId1').style.opacity = '100%';
                 document.querySelector('#postInternalId2').style.opacity = '100%';
                 PostHeader();
+
                 document.body.appendChild(box);
-                projects();
-                historyDiv();
+                switch (postTrack) {
+                    case 'postId':
+
+                        break;
+                    case 'postId1':
+
+                        break;
+                    case 'postId2':
+                        historyDiv();
+                        break;
+                    case 'postId3':
+
+                        break;
+                    case 'postId4':
+                        projects();
+                        break;
+                    case 'postId5':
+
+                        break;
+                    case 'postId6':
+
+                        break;
+                    case 'postId7':
+
+                        break;
+                    case 'postId8':
+
+                        break;
+                    case 'postId9':
+                        ballJumpCss();
+                        break;
+                    case 'postId10':
+                        concentrationCaller();
+                        break;
+                    case 'postId11':
+                        callerFunnyAvatar();
+                        break;
+
+                    default:
+                        break;
+                }
             }
         })
     }
-}
-
-
-let historyDiv = () => {
-
-    var historyStory1 = document.createElement('div');
-    historyStory1.id = 'historyStory1Id';
-    historyStory1.className = 'historyStoryClass';
-    historyStory1.innerHTML = 'story-1';
-    document.querySelector('#postId2').appendChild(historyStory1);
-
-    var historyStory2 = document.createElement('div');
-    historyStory2.id = 'historyStory2Id';
-    historyStory2.className = 'historyStoryClass';
-    historyStory2.innerHTML = 'story-2';
-    document.querySelector('#postId2').appendChild(historyStory2);
-
-    const boxes = [...document.querySelectorAll(".historyStoryClass")];
-    for (const box of boxes) {
-        box.addEventListener('click', event => {
-
-            if (!box.classList.contains('historyStoryClassOpen')) {
-                document.querySelector('.postClass').remove();
-                box.classList.add('historyStoryClassOpen');
-                box.style.cursor = "default";
-                box.style.opacity = "100%";
-                box.style.background = 'none';
-                box.style.backgroundColor = 'rgb(102, 150, 210)';
-                box.classList.add('postOpen');
-                document.body.appendChild(box);
-            }
-        })
-    }
-
 }
 
 let homeContentSearchFun = () => {
