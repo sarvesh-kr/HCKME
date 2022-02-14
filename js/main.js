@@ -453,7 +453,7 @@ let postOpen = () => {
                         historyDiv();
                         break;
                     case 'postId3':
-
+                        diaryContainerCaller();
                         break;
                     case 'postId4':
                         projects();
