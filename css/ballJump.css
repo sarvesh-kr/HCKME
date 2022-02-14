@@ -9,14 +9,14 @@
     width: 40vh;
     background-color: rgba(17, 17, 16, 0.377);
     rotate: 150deg;
-    transform: perspective(5em) rotateX(50deg);
-    animation: ballFloorAnim 1s infinite;
+    animation: ballFloorAnim 10s infinite;
     border-color: rgba(17, 17, 16, 0.267);
     border-style: groove;
     border-width: 20px;
     font-size: 10px;
-    color: antiquewhite;
-    border-radius: 50px;
+    color: red !important;
+    border-radius: 500px 50px 1px 1px;
+    text-shadow: 5px 5px 1px yellow;
 }
 
 #ballJumpFloorId::after {
@@ -30,7 +30,7 @@
         opacity: 50%;
     }
     50% {
-        transform: perspective(10em) rotateX(-10deg);
+        transform: perspective(5em) rotateX(200deg);
         opacity: 100%;
     }
 }
@@ -47,8 +47,16 @@
     background-color: yellow;
     border-radius: 200px;
     transform-style: preserve-3d;
-    animation: ballAnim 1s infinite;
-    box-shadow: -5px 1px 100px rgba(235, 202, 15, 0.096);
+    animation: ballAnim 5s infinite;
+    box-shadow: -1px 1px 5px rgb(250, 246, 8);
+    text-align: center;
+    color: rgb(56, 56, 55);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#ball::after {
+    content: ".CSS";
 }
 
 @keyframes ballAnim {
@@ -56,6 +64,6 @@
         bottom: 1000px;
     }
     50% {
-        top: 500px;
+        top: 600px;
     }
 }
