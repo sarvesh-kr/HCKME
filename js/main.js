@@ -156,7 +156,7 @@ let Post = () => {
     postInternal.innerHTML = `
     
     <div id="content-1" class="content">
-        <h2>"Hello World" Program in Java, C, C++, Python</h2>
+        <h2>"Hello World" Program in Java, C, C++, Python extra</h2>
         <p class="p1">
             <b>HelloWorld.java</b>
 <pre><code>
