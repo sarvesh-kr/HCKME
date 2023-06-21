@@ -44,7 +44,7 @@ let PostHeader = () => {
 
     var postHeaderTextDiv = document.createElement('div');
     postHeaderTextDiv.id = 'postHeaderTextDivId';
-    postHeaderTextDiv.innerHTML = 'HCKME\'s&nbsp;<sup>Blog&nbsp;<img src="./img/supFace.png" height="25px" width="25px" alt="Hello"></sup>';
+    postHeaderTextDiv.innerHTML = 'HCKME\'s&nbsp;<sup>Blog&nbsp;<img src="/img/supFace.png" height="25px" width="25px" alt="Hello"></sup>';
 
     closeButton = document.createElement('button');
     closeButton.id = 'closeButtonId';
@@ -337,7 +337,7 @@ let Post = () => {
     `;
 
     document.querySelector('#inBody').appendChild(post);
-    document.querySelector('#postId').style.backgroundImage = "url('../img/programmer.gif')";
+    document.querySelector('#postId').style.backgroundImage = "url('./img/programmer.gif')";
     document.querySelector("#postId").appendChild(postInternal);
     document.querySelector("#postId").appendChild(postInternal1);
     document.querySelector("#postId").appendChild(postInternal2);
@@ -349,7 +349,7 @@ let Post = () => {
     post1.className = 'postClass';
     // post1.innerHTML = `content-2`;
     document.querySelector('#inBody').appendChild(post1);
-    document.querySelector('#postId1').style.backgroundImage = "url('../img/hckmeNews.gif')";
+    document.querySelector('#postId1').style.backgroundImage = "url('./img/hckmeNews.gif')";
     //end--
 
     //--start
@@ -358,7 +358,7 @@ let Post = () => {
     post2.className = 'postClass';
     // post2.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post2);
-    document.querySelector('#postId2').style.backgroundImage = "url('../img/history.png')";
+    document.querySelector('#postId2').style.backgroundImage = "url('./img/history.png')";
     //end--
 
     var post3 = document.createElement('div');
@@ -366,7 +366,7 @@ let Post = () => {
     post3.className = 'postClass';
     // post3.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post3);
-    document.querySelector('#postId3').style.backgroundImage = "url('../img/diaries.png')";
+    document.querySelector('#postId3').style.backgroundImage = "url('./img/diaries.png')";
 
 
     var post4 = document.createElement('div');
@@ -374,7 +374,7 @@ let Post = () => {
     post4.className = 'postClass';
     // post4.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post4);
-    document.querySelector('#postId4').style.backgroundImage = "url('../img/projects.png')";
+    document.querySelector('#postId4').style.backgroundImage = "url('./img/projects.png')";
 
     var post5 = document.createElement('div');
     post5.id = 'postId5';
@@ -405,7 +405,7 @@ let Post = () => {
     post9.className = 'postClass';
     // post9.innerHTML = `content-3`;
     document.querySelector('#inBody').appendChild(post9);
-    document.querySelector('#postId9').style.backgroundImage = "url('../img/cssDiv.png')";
+    document.querySelector('#postId9').style.backgroundImage = "url('./img/cssDiv.png')";
 
     var post10 = document.createElement('div');
     post10.id = 'postId10';
