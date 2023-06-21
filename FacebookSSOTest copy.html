@@ -74,8 +74,60 @@
         var page_id = data[0]
         var page_access_token = data[1]
 
-        document.getElementById('fbPageID').innerHTML = "<b style='color: #1773EA;'>Page ID</b>: " + page_id;
 
+        //document.getElementById("pageaccesstoken").value = page_access_token;
+        //document.getElementById("pageid").value = page_id;
+        //var e = document.getElementById("pages-list");
+
+        //var text=e.options[e.selectedIndex].text;
+        //document.getElementById("pagename").value = text;
+
+        //console.log('Subscribing page to app! ' + page_id);
+
+
+
+        FB.api(
+            '/' + page_id + '/subscribed_apps',
+            'post', {
+                access_token: page_access_token,
+                subscribed_fields: ['leadgen']
+            },
+            function(response) {
+
+
+                if (document.getElementById('pages-list').value != "0") {
+                    alert('Successfully Subscribed Page');
+                    sendFBLeadInfoToMsquare();
+                }
+
+
+
+                //console.log('Successfully subscribed page', response);
+
+            });
+
+        function sendFBLeadInfoToMsquare() {
+            var data = {
+                loggedIn_person_name: loggedIn_person,
+                subscribed_page_access_token: page_access_token,
+                subscribed_page_id: page_id,
+                loggedIn_person_FB_accountId: loggedIn_person_accountId
+
+            };
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://hook.eu1.make.com/h5szcvo77ochnbxaadx9bel2lq4smwd7', true);
+            xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var res = JSON.parse(xhr.response);
+                    console.log(res);
+                }
+            };
+
+            xhr.send(JSON.stringify(data));
+            return false;
+        }
     }
 </script>
 
@@ -87,9 +139,9 @@
 
 
 <!-- The JS SDK Login Button -->
-<din id="mainFBContainer" style="padding: 15px; margin-top: 25px; margin-left: 25%; font-size: 15px; float: left; background-color: #f1f5fb; width: 50%; height: 40%; border-style: groove; border-radius: 5px;">
+<din id="mainFBContainer" style="padding: 15px; margin-top: 25px; margin-left: 25%; font-size: 15px; float: left; background-color: #f1f5fb; width: 50%; height: 30%; border-style: groove; border-radius: 5px;">
 
-    <div id="fbUserName" style="margin-bottom: 30px"></div>
+    <div id="fbUserName" style="margin-bottom: 30px">Hi, </div>
 
     <div id="status">
     </div>
@@ -99,7 +151,8 @@
 
 
     <div class="col-sm-6 col-xl-6">
-        <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-scope="pages_show_list" onlogin="checkLoginState();"></div>
+        <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-scope="pages_read_engagement,pages_manage_metadata,pages_manage_ads,email,pages_show_list,leads_retrieval,public_profile,ads_management,business_management,catalog_management,pages_manage_posts"
+            onlogin="checkLoginState();"></div>
 
         <button type="button" id="fbLogin" class="btn btn-primary" style="display:none">Authorize Facebook</button>
     </div>
@@ -109,5 +162,5 @@
     <option value="0">Select Page</option>
   </select></span>
     <button style="margin-top: 25px; margin-left: 250px; background-color:#1773EA; border: none; color: white; height: 30px; width: 70px; border-radius: 4px; cursor: pointer;" onclick="subscribePage()">Submit</button>
-    <div id="fbPageID" style="margin-top: 10px;"></div>
+
     </div>

@@ -30,7 +30,7 @@
         opacity: 50%;
     }
     50% {
-        transform: perspective(5em) rotateX(200deg);
+        transform: perspective(50em) rotateX(-300deg) rotateY(-300deg);
         opacity: 100%;
     }
 }
